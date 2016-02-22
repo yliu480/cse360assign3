@@ -54,7 +54,12 @@ public class CalculatorTest {
 	
 	@Test
 	public void testGetHistory () {
-		fail("Not build yet");
+		Calculator test = new Calculator();
+		test.add(8);
+		test.subtract(2);
+		test.multiply(3);
+		test.divide(6);
+		assertEquals(test.getHistory(),"0 + 8 - 2 * 3 / 6");
 	}
 
 
